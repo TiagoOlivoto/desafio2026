@@ -5,18 +5,43 @@ project:
 website:
   title: "Desafio R 2026"
   navbar:
+    background: "#0f172a"
+    search: true
     left:
       - href: index.qmd
         text: Home
       - about.qmd
       - desafio_2026.qmd
       - solucao.qmd
+    right:
+      - icon: github
+        href: https://github.com
+        aria-label: GitHub
+
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - section: "Navegação Rápida"
+        contents:
+          - index.qmd
+          - about.qmd
+      - section: "O Desafio"
+        contents:
+          - desafio_2026.qmd
+          - solucao.qmd
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, custom-theme.scss]
     css: styles.css
     toc: true
+    toc-depth: 3
+    toc-title: "Nesta página"
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
 
 editor: source
-

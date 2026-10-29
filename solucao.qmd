@@ -3,15 +3,15 @@ title: "Solução"
 ---
 
 # Pacotes e dados
+
 ```{r}
 library(rio)
 df <- import("laboratorio.xlsx", setclass = "tbl")
 df
 ```
 
-
 # Análise
+
 ```{r}
 hist(df$AP)
 ```
-
