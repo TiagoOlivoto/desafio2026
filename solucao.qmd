@@ -9,3 +9,9 @@ df <- import("laboratorio.xlsx", setclass = "tbl")
 df
 ```
 
+
+# Análise
+```{r}
+hist(df$AP)
+```
+
